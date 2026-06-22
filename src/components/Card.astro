@@ -16,12 +16,12 @@ const { props } = Astro.props;
 const formatDate = (date: string) =>
   date === 'Present' ? 'Present' : new Date(date).toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
 ---
-<div class="rounded-lg border border-gray-200 bg-white p-5 shadow-sm">
-    <span class="text-xs font-sans text-gray-400 uppercase tracking-wide float-right pl-2">
+<div class="rounded-lg border border-sky-200 bg-sky-900 p-5 shadow-sm">
+    <span class="text-xs font-sans text-zinc-300 uppercase tracking-wide float-right pl-2">
     {formatDate(props.startDate)}{props.endDate && ` – ${formatDate(props.endDate)}`}
     </span>
-    <h3 class="mt-1 text-xl font-serif">{props.title}</h3>
-    <p class="mt-2 text-sm font-sans text-gray-600 leading-relaxed">{props.description}</p>
+    <h3 class="mt-1 text-xl font-serif text-zinc-50">{props.title}</h3>
+    <p class="mt-2 text-sm font-sans text-zinc-100 leading-relaxed">{props.description}</p>
     {props.videoUrl && (
     <div class="mt-4 aspect-video">
         <iframe
