@@ -17,7 +17,8 @@ const blogPosts = Object.values(import.meta.glob('../content/blog/*.md', { eager
 	startDate: post.frontmatter.startDate,
 	endDate: post.frontmatter.endDate,
 	title: post.frontmatter.title,
-	description: post.frontmatter.description
+	description: post.frontmatter.description,
+	videoUrl: post.frontmatter.videoUrl
 	}))}
 />
 <BlogPostCarousel posts={blogPosts}
