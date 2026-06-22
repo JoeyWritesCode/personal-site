@@ -1,0 +1,23 @@
+---
+interface TimelineItem {
+  startDate: string
+  endDate?: string
+  title: string
+  description: string
+}
+
+interface Props {
+    items: TimelineItem[]
+}
+
+const { items } = Astro.props;
+---
+<ul>
+  {items.map((item) => (
+    <li>
+      <span>{item.startDate} – {item.endDate ?? 'Present'}</span>
+      <h3>{item.title}</h3>
+      <p>{item.description}</p>
+    </li>
+  ))}
+</ul>
