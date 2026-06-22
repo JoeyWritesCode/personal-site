@@ -12,12 +12,14 @@ interface Props {
 
 const { items } = Astro.props;
 ---
-<ul>
-  {items.map((item) => (
-    <li>
-      <span>{item.startDate} – {item.endDate ?? 'Present'}</span>
-      <h3>{item.title}</h3>
-      <p>{item.description}</p>
-    </li>
-  ))}
-</ul>
+<section class="flex ">
+    <ul>
+    {items.map((item) => (
+        <li>
+        <span>{item.startDate} – {item.endDate ?? 'Present'}</span>
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+        </li>
+    ))}
+    </ul>
+</section>

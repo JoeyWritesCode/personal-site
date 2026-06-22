@@ -1,5 +1,7 @@
 ---
 const { imgUrl, quote } = Astro.props;
 ---
-<img src={imgUrl}>
-<p>{quote}</p>
+<section>
+    <img src={imgUrl} class="float-left object-cover w-[200px] h-[200px]">
+    <p>{quote}</p>
+</section>

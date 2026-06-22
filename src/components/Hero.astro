@@ -1,5 +1,7 @@
 ---
 const { title, subtitle } = Astro.props;
 ---
-<h1>{title}</h1>
-<h2>{subtitle}</h2>
+<section class="flex flex-col items-center justify-center py-24">
+  <h1 class="text-6xl font-serif text-center">{title}</h1>
+  <p class="text-xl font-sans text-center mt-4">{subtitle}</p>
+</section>

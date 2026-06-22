@@ -12,8 +12,7 @@ const blogPosts = Object.values(import.meta.glob('../content/blog/*.md', { eager
 <BaseLayout pageTitle="Home"/>
 <Hero title="Software Design for Impact" subtitle="Open to Opportunities">
 </Hero>
-<AvatarCallout imgUrl="https://thumbs.dreamstime.com/b/young-happy-man-thumbs-up-sign-casuals-isolated-white-background-38928366.jpg?w=768" quote="Hi! My name is Joey. I'm a Software Engineer with software generalist with 2+ years of experience overseeing design, development, and management of data-intensive systems.">
-</AvatarCallout>
+<AvatarCallout imgUrl="https://thumbs.dreamstime.com/b/young-happy-man-thumbs-up-sign-casuals-isolated-white-background-38928366.jpg?w=768" quote="Hi! My name is Joey. I'm a Software Engineer with software generalist with 2+ years of experience overseeing design, development, and management of data-intensive systems."/>
 <TimeLine items={workPosts.map((post:any) => ({
 	startDate: post.frontmatter.startDate,
 	endDate: post.frontmatter.endDate,
