@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "Shipping Fast Without Losing Your Mind"
 description: "Lessons from a year of rapid iteration at a startup."
 date: 2026-06-01

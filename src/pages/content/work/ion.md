@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "ION Analytics"
 description: "Full Stack Development, Data Pipelines, Operations"
 startDate: 2023-08-01

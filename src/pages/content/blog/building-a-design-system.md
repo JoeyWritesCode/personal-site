@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "Building a Design System from Scratch"
 description: "How I approached creating a cohesive component library for a mid-sized product team."
 date: 2026-04-10

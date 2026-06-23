@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "SourceIt Solutions"
 description: "Full Stack Development, Data Pipelines, Operations"
 startDate: 2023-10-01

@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "TypeScript Patterns That Actually Help Teams"
 description: "Beyond basic types."
 date: 2026-05-22

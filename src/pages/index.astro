@@ -5,8 +5,8 @@ import Hero from "../components/Hero.astro";
 import AvatarCallout from "../components/AvatarCallout.astro";
 import TimeLine from "../components/TimeLine.astro";
 import BlogPostCarousel from "../components/BlogPostCarousel.astro";
-const workPosts = Object.values(import.meta.glob('../content/work/*.md', { eager: true }));
-const blogPosts = Object.values(import.meta.glob('../content/blog/*.md', { eager: true }));
+const workPosts = Object.values(import.meta.glob('./content/work/*.md', { eager: true }));
+const blogPosts = Object.values(import.meta.glob('./content/blog/*.md', { eager: true }));
 ---
 
 <BaseLayout pageTitle="Home"/>
@@ -14,6 +14,7 @@ const blogPosts = Object.values(import.meta.glob('../content/blog/*.md', { eager
 </Hero>
 <AvatarCallout imgUrl="https://thumbs.dreamstime.com/b/young-happy-man-thumbs-up-sign-casuals-isolated-white-background-38928366.jpg?w=768" quote="Hi! My name is Joey. I'm a Software Engineer with software generalist with 2+ years of experience overseeing design, development, and management of data-intensive systems."/>
 <TimeLine items={workPosts.map((post:any) => ({
+	url: post.url,
 	startDate: post.frontmatter.startDate,
 	endDate: post.frontmatter.endDate,
 	title: post.frontmatter.title,

@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "Travel Sabbatical"
 description: "Full Stack Development, Data Pipelines, Operations"
 startDate: 2025-11-16

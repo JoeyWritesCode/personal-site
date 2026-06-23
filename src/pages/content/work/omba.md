@@ -1,4 +1,5 @@
 ---
+layout: ../../../layouts/MarkdownPostLayout.astro
 title: "Omba Advisory and Investments"
 description: "Full Stack Development, Data Pipelines, Operations"
 startDate: 2024-03-01

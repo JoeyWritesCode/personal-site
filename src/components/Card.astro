@@ -1,5 +1,6 @@
 ---
 interface CardContent {
+  url: string
   startDate: string
   endDate?: string
   title: string
@@ -31,4 +32,5 @@ const formatDate = (date: string) =>
         />
     </div>
     )}
+    <a href={props.url}>Read more...</a>
 </div>
