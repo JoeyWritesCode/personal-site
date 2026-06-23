@@ -1,13 +1,22 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import BlogPostCarousel from '../components/BlogPostCarousel.astro';
 const { frontmatter } = Astro.props;
 ---
 <BaseLayout pageTitle={frontmatter.title}>
-  <p><em>{frontmatter.description}</em></p>
-  <div class="tags">
-    {frontmatter.tags.map((tag: string) => (
-      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-    ))}
+  <div class="max-w-2xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-serif text-center">{frontmatter.title}</h1>
+    <p class="mt-4 text-center text-gray-400 italic font-sans">{frontmatter.description}</p>
+    <div class="flex flex-wrap justify-center gap-2 mt-4">
+      {frontmatter.tags.map((tag: string) => (
+        <a href={`/tags/${tag}`} class="text-xs uppercase tracking-wide px-3 py-1 rounded-full border border-gray-500 text-gray-400 hover:border-white hover:text-white transition-colors">
+          {tag}
+        </a>
+      ))}
+    </div>
+    <hr class="my-8 border-gray-700" />
+    <div class="font-sans">
+      <slot />
+    </div>
   </div>
-  <slot />
 </BaseLayout>
