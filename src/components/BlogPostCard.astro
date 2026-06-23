@@ -1,7 +1,19 @@
 ---
 const { url, title, description } = Astro.props;
 ---
-<a href={url}>
-    <h3>{title}</h3>
-    <p>{description}</p>
-</a>
+<style>
+    a.button {
+        padding: 1px 6px;
+        border: 1px outset buttonborder;
+        border-radius: 3px;
+        color: buttontext;
+        background-color: buttonface;
+        text-decoration: none;
+    }
+</style>
+
+<div class="flex flex-col max-w-80 rounded-2xl border-dashed border-gray-200 bg-amber-950 p-5 shadow-sm">
+    <h3 class="mt-1 text-xl font-serif text-zinc-50">{title}</h3>
+    <p class="mt-2 text-sm font-sans text-zinc-100 leading-relaxed">{description}</p>
+    <a class="button mt-auto" href={url}>Read more...</a>
+</div>
